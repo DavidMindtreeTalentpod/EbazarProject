@@ -1,0 +1,57 @@
+
+
+
+
+<mat-card  class="matcard">
+  
+    <mat-card-header>
+    <nav>
+          <ul>
+         <li id="login" > <a href="#" >Login</a><li>
+          <li class="Newuser"><a href="" style="color:yellow;" >New User?</a></li>
+          <li class="Newuser"> <a href=" ">Sign Up</a></li>
+        </ul>
+      </nav>
+    </mat-card-header>
+    <mat-card-content>
+    
+           <mat-form-field class="field"> 
+                   <mat-label>UserName</mat-label> 
+
+                          <input matInput placeholder ="UserName"> 
+           </mat-form-field> 
+                 
+              
+
+              <mat-form-field class="field">
+                             <mat-label>Password</mat-label>
+                            <input matInput placeholder   ="Password">
+              </mat-form-field>
+
+                          
+                     
+
+<nav>
+  <ul>
+<li class="new"><mat-checkbox>Remember me!</mat-checkbox></li>
+<li style="float:right;" class="new"><a  md-button href="">Forgot Password</a></li>
+  </ul>
+</nav>
+
+</mat-card-content>
+
+
+
+ <div class="button">
+  <mat-card-actions>
+    <button   mat-raised-button (click)="login()" color="primary">Login</button>
+  </mat-card-actions>
+ </div>
+
+
+
+
+</mat-card>
+
+
+

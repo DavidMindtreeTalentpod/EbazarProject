@@ -1,0 +1,100 @@
+<div class="wraper">
+
+    <div class="card">
+        <ul>
+            <li id="li1"><a href="#">EBAZZAR</a></li>
+            <li id="li2">
+                <a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="contain">
+        <nav>
+            <ul>
+                <li>
+                    <input matInput>&nbsp;&nbsp;
+                    <span><button color="warn" mat-raised-button>Search  <i class="material-icons"   >search </i></button></span>
+                </li>
+
+                <li id="li2">
+                    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                        <mat-button-toggle value="bold" style="background-color:rgb(0, 162, 255);color:whitesmoke" (click)="sortDec()">
+                            <i class="material-icons" style=color:yellow>keyboard_arrow_down</i>Price
+                        </mat-button-toggle>
+                        <mat-button-toggle value="bold" style="background-color:rgb(0, 162, 255);color:whitesmoke" (click)="sortAsc()">
+                            <i class="material-icons" style=color:yellow>keyboard_arrow_up</i>Price
+                        </mat-button-toggle>
+                        <mat-button-toggle value="bold" style="background-color:rgb(0, 162, 255);color:whitesmoke" (click)="RevAsc()">
+                            <i class="material-icons" style=color:yellow>keyboard_arrow_up</i>rating
+                        </mat-button-toggle>
+                        <mat-button-toggle value="bold" style="background-color:rgb(0, 162, 255);color:whitesmoke" (click)="RevDec()">
+                            <i class="material-icons" style=color:yellow>keyboard_arrow_down</i>rating
+                        </mat-button-toggle>
+                    </mat-button-toggle-group>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="productResult">
+
+        <div *ngFor="let p of products;">
+
+            <mat-card style="float:left ;margin:2px;">
+
+                <table>
+                    <i class=" material-icons " style="font-size:70px;color:orange;margin-bottom: 70px ">insert_photo</i>
+                    <span class="oneline ">
+                        <tr>
+                            <th>Product Id</th>
+                             <td><p>{{p.id}}</p></td>
+                          </tr>
+
+                          <tr>
+                              <th>ProductDiscription</th>
+                               <td><p>{{p.ProductDiscription}}</p></td>
+                          </tr>
+                       
+                          <tr>
+                              <th>catagary</th>
+                               <td><p>{{p.catagary}}</p></td>
+                            </tr>
+
+                            <tr>
+                                <th>catagary</th>
+                                 <td><p>{{p.price}}</p></td>
+                              </tr>
+                   
+
+                    </span>
+                    <span class="oneline ">
+                        <tr>
+                            <th>Review</th>
+                             <td>  <p> {{p.review}}</p></td>
+                          </tr>
+               
+
+                          
+                        <tr>
+                            <th>Review</th>
+                             <td> <p> {{p.vendor}}</p></td>
+                          </tr>
+                        <tr>
+                            <th>rateing </th>
+                            <td>{{p.rateing}}</td>
+                        </tr>
+
+
+                    </span>
+                </table>
+
+            </mat-card>
+
+        </div>
+        <!-- </table> -->
+  
+    </div>
+
+
+
+</div>

@@ -1,0 +1,48 @@
+  .new
+     {
+       font-size: 13px;
+       padding: 5px;
+     }
+
+  .Newuser
+     {
+         font-size: 13px;
+         float: right;
+
+      }
+.matcard
+{
+   float: right;
+   margin-right: 100px;
+  
+   max-width: 400px;
+
+} 
+.button{
+
+    padding:20px;
+    margin-left: 80px;
+
+ 
+  }
+ 
+
+.field {
+  width:70%;
+}
+.matcard nav ul li
+{
+  display: inline;
+
+}
+nav ul li{
+  padding: 10px;
+}
+nav  ul li a{
+text-decoration: none;
+
+}
+#login{
+  float: left;
+
+}
